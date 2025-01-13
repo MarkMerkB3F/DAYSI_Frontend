@@ -1,0 +1,30 @@
+.navbar-body{
+  margin: 10px;
+  background: white;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.btn-account{
+  margin-left: auto;
+  border: none;
+  margin-right: 10px;
+
+  background: transparent;
+  height: fit-content;
+  width: fit-content;
+}
+
+.btn-account-icon{
+  scale: 1.7;
+  align-self: center;
+}
+.btn-account-icon:hover{
+  scale: 1.8;
+  transform-origin: center;
+}
+
+.username{
+
+}
