@@ -1,0 +1,14 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  border: 1px solid #000;
+  width: 700px;
+  height: 350px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px silver;
+  margin: 10px;
+}
