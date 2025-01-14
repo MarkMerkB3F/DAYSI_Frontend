@@ -6,25 +6,28 @@
   display: flex;
   align-items: center;
 }
-.btn-account{
-  margin-left: auto;
-  border: none;
-  margin-right: 10px;
-
-  background: transparent;
-  height: fit-content;
-  width: fit-content;
-}
 
 .btn-account-icon{
-  scale: 1.7;
+  scale: 1.8;
   align-self: center;
 }
+
 .btn-account-icon:hover{
-  scale: 1.8;
+  scale: 1.9;
   transform-origin: center;
 }
 
-.username{
+.account-field{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 
+.btn-account{
+  margin-right: 10px;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  height: fit-content;
+  width: fit-content;
 }
