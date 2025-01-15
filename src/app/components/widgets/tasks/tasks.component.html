@@ -1,5 +1,4 @@
-<div class="top-bar">
-    <a>Aufgaben</a>
+<div>
+    <button class="top-bar" (click)="openTasksSite()">Aufgaben</button>
 </div>
 <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
-

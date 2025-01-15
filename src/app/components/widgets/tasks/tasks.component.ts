@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 import { TodoService } from '../../../services/todo.service';
 import {TaskItemComponent} from './task-item/task-item.component';
 import {Todo} from "../../../todo";
@@ -15,6 +16,12 @@ import {NgForOf} from "@angular/common";
   styleUrl: './tasks.component.scss'
 })
 export class TasksComponent {
+  constructor(private router: Router) {}
+
+  openTasksSite(){
+    this.router.navigate(['/tasks-site']);
+  }
+
   constructor(private todoService: TodoService){
    this.todoService.getAllTodos()
   }
