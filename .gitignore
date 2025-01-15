@@ -10,7 +10,6 @@
 /node_modules
 npm-debug.log
 yarn-error.log
-package-lock.json
 
 # IDEs and editors
 .idea/
@@ -21,6 +20,9 @@ package-lock.json
 *.launch
 .settings/
 *.sublime-workspace
+
+# Configuration files
+package-lock.json
 
 # Visual Studio Code
 .vscode/*
