@@ -16,14 +16,12 @@ import {NgForOf} from "@angular/common";
   styleUrl: './tasks.component.scss'
 })
 export class TasksComponent {
-  constructor(private router: Router) {}
-
-  openTasksSite(){
-    this.router.navigate(['/tasks-site']);
+  constructor(private router: Router, private todoService: TodoService) {
+    this.todoService.getAllTodos();
   }
 
-  constructor(private todoService: TodoService){
-   this.todoService.getAllTodos()
+  openTasksSite() {
+    this.router.navigate(['/tasks-site']);
   }
   tasks: Todo[] = [
     {
