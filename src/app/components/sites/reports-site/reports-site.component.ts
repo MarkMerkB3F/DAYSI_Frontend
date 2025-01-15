@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-reports-site',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './reports-site.component.scss'
 })
 export class ReportsSiteComponent {
+  constructor(private router: Router) {}
 
+  openHomeSite(){
+    this.router.navigate(['**']);
+  }
 }
