@@ -1,5 +1,5 @@
 <div class="top-bar">
     <a>Aufgaben</a>
 </div>
-<app-task-item></app-task-item>
+<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
 

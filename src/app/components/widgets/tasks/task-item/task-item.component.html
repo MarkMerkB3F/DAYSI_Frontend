@@ -1,22 +1,25 @@
 
 <div class="task-frame">
     <div class="task-container">
-        <!-- Name des Tasks -->
         <div class="task-header" (click)="toggle()">
             <mat-icon class="toggle-icon">
                 {{ isExpanded ? 'expand_more' : 'chevron_right' }}
             </mat-icon>
-            <span>{{ task.name }}</span>
+            <span>{{ task?.title }}</span>
         </div>
-
-        <!-- Beschreibung (sichtbar, wenn isExpanded true ist) -->
         <div class="task-description" *ngIf="isExpanded">
-            <p>{{ task.description }}</p>
+            <p>{{ task?.content }}</p>
         </div>
     </div>
-    <button mat-icon-button [matMenuTriggerFor]="menu" class="btn-task-menu">
-        <mat-icon>more_horiz</mat-icon>
-    </button>
+    <div class="category-button-frame">
+        <div class="category-frame">
+            {{task?.category}}
+        </div>
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="btn-task-menu">
+            <mat-icon>more_horiz</mat-icon>
+        </button>
+    </div>
+
     <mat-menu #menu="matMenu">
         <button mat-menu-item>Löschen</button>
         <button mat-menu-item>Bearbeiten</button>

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import {MatIconButton} from '@angular/material/button';
 import {NgIf} from "@angular/common";
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
+import {Todo} from "../../../../todo";
 
 @Component({
     selector: 'app-task-item',
@@ -18,10 +19,7 @@ import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
     styleUrls: ['./task-item.component.scss'],
 })
 export class TaskItemComponent {
-    task = {
-        name: 'Task 1',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores ',
-    };
+    @Input() task?: Todo;
 
     isExpanded = false;
 
