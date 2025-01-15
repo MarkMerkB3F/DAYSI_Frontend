@@ -1,33 +1,40 @@
-.navbar-body{
-  margin: 10px;
-  background: white;
-  height: 50px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
+.navbar-body {
+	margin: 10px;
+	background: white;
+	height: 50px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
 }
 
-.btn-account-icon{
-  scale: 1.8;
-  align-self: center;
+.btn-account-icon {
+	scale: 1.8;
+	align-self: center;
+	color: #1e2a3c;
 }
 
-.btn-account-icon:hover{
-  scale: 1.9;
-  transform-origin: center;
+.btn-account-icon:hover {
+	scale: 1.9;
+	transform-origin: center;
 }
 
-.account-field{
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+.account-field {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
 }
 
-.btn-account{
-  margin-right: 10px;
-  margin-left: 10px;
-  background: transparent;
-  border: none;
-  height: fit-content;
-  width: fit-content;
+.btn-account {
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+	border: none;
+	height: fit-content;
+	width: fit-content;
+}
+
+.project-logo {
+	height: 40px;
+	width: 40px;
+	margin-left: 20px;
 }
