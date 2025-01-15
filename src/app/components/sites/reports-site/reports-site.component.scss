@@ -1,0 +1,22 @@
+.full-widget{
+  height: 850px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+}
+
+.top-bar {
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 22px 22px 0 0;
+  font-size: 1.5rem;
+}
