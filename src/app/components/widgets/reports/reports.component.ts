@@ -11,6 +11,6 @@ export class ReportsComponent {
   constructor(private router: Router) {}
 
   openReportsSite(){
-    this.router.navigate(['/reports-site']);
+    this.router.navigate(['/reports']);
   }
 }

@@ -11,6 +11,6 @@ export class NotesComponent {
   constructor(private router: Router) {}
 
   openNotesSite(){
-    this.router.navigate(['/notes-site']);
+    this.router.navigate(['/notes']);
   }
 }

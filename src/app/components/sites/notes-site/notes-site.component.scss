@@ -5,13 +5,13 @@
   margin: 10px;
   background-color: white;
   display: flex;
+  flex-direction: column;
 }
 
 .top-bar {
   top: 0;
   left: 0;
   height: 60px;
-  width: 100%;
   background-color: #232f3e;
   color: white;
   display: flex;
@@ -21,7 +21,7 @@
   font-size: 1.5rem;
 }
 
-.back-button{
+.back-button {
   border: none;
   display: flex;
   height: 60px;
@@ -32,4 +32,62 @@
   align-items: center;
   padding: 0 20px;
   font-size: 1.5rem;
+}
+
+.widget-body {
+  top: 60px;
+  left: 0;
+  height: 730px;
+  display: flex;
+  margin-bottom: auto;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.button-container {
+  height: 60px;
+}
+
+.add-note-button{
+  border: none;
+  align-items: center;
+  background-color: #232f3e;
+  padding: 15px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 22px 22px 22px 22px;
+  display: flex;
+}
+
+.add-note{
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+}
+
+.add-note-window{
+  text-align: left;
+  vertical-align: top;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.add-save-note-button{
+  margin-top: 5px;
+}
+
+.notes-list{
+  margin-left: 15px;
+}
+
+.notes-list-element{
+  margin-top: 5px;
+  border: none;
+  align-items: center;
+  background-color: #232f3e;
+  padding: 15px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 22px 22px 22px 22px;
+  display: flex;
 }

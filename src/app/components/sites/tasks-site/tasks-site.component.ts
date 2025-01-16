@@ -11,6 +11,6 @@ export class TasksSiteComponent {
   constructor(private router: Router) {}
 
   openHomeSite(){
-    this.router.navigate(['**']);
+    this.router.navigate(['']);
   }
 }
