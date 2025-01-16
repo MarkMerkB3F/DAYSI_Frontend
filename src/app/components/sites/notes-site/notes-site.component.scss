@@ -60,19 +60,20 @@
 }
 
 .add-note{
-  height: 300px;
-  width: 100%;
   padding: 5px;
 }
 
 .add-note-window{
+  height: 300px;
+  width: 100%;
   text-align: left;
   vertical-align: top;
-  padding-top: 0;
-  padding-left: 0;
+  padding: 2px;
+  resize: none;
 }
 
 .add-save-note-button{
+  padding-top: 5px;
   margin-top: 5px;
 }
 
@@ -80,7 +81,7 @@
   margin-left: 15px;
 }
 
-.notes-list-element{
+.notes-list-element-title{
   margin-top: 5px;
   border: none;
   align-items: center;
@@ -90,4 +91,24 @@
   font-size: 1rem;
   border-radius: 22px 22px 22px 22px;
   display: flex;
+}
+
+.notes-list-element-button{
+  margin-top: 5px;
+  border: none;
+  align-items: center;
+  background-color: #232f3e;
+  color: white;
+  font-size: 1rem;
+  border-radius: 22px 22px 22px 22px;
+  display: flex;
+}
+
+.notes-list-element-body{
+  width: 99%;
+  margin-top: 5px;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 0;
+  padding-left: 0;
 }
