@@ -1,8 +1,9 @@
 .full-widget{
   height: 850px;
+  width: 1400px;
   border-radius: 25px;
   box-shadow: 0 0 10px black;
-  margin: 10px;
+  margin: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@
   margin-bottom: auto;
   padding: 20px;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .button-container {
