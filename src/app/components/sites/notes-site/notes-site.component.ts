@@ -35,6 +35,7 @@ export class NotesSiteComponent {
       this.noteBody = '';
       this.showAddNoteInput = false;
       this.idCounter++;
+      this.saveNotes();
   }
 
   toggleShowNotes(id: number) : void{
@@ -42,6 +43,11 @@ export class NotesSiteComponent {
       if (note) {
           note.showBody = !note.showBody;
       }
+      this.saveNotes();
+  }
+
+  saveNotes(): void{
+      //Hier Backendlogik
   }
 
   openHomeSite(){
