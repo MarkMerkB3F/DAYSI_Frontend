@@ -1,0 +1,24 @@
+
+<div class="note-frame">
+    <div class="note-container">
+        <div class="note-header" (click)="toggle()">
+            <mat-icon class="toggle-icon">
+                {{ isExpanded ? 'expand_more' : 'chevron_right' }}
+            </mat-icon>
+            <span>{{ note?.title }}</span>
+        </div>
+        <div class="note-description" *ngIf="isExpanded">
+            <p>{{ note?.body }}</p>
+        </div>
+    </div>
+    <div class="category-button-frame">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="btn-note-menu">
+            <mat-icon>more_horiz</mat-icon>
+        </button>
+    </div>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="editNote()">Löschen</button>
+        <button mat-menu-item>Bearbeiten</button>
+    </mat-menu>
+</div>
