@@ -5,10 +5,16 @@
 }
 
 .widget {
-  width: 800px;
-  height: 400px;
+  width: 690px;
+  height: 370px;
   border-radius: 25px;
   box-shadow: 0 0 10px black;
   margin: 10px;
   background-color: white;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
