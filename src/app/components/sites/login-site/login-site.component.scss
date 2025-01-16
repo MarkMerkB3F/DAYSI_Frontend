@@ -1,0 +1,25 @@
+.full-widget{
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-logo{
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  padding-bottom: 20px;
+}
