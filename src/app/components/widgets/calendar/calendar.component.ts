@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy,Component, model } from '@angular/core';
+import {ChangeDetectionStrategy, Component, model, NgIterable} from '@angular/core';
 import {Router} from "@angular/router";
 import {MatCalendar, MatDatepickerModule} from "@angular/material/datepicker";
 import {MatCard, MatCardModule} from "@angular/material/card";
 import {MatNativeDateModule, provideNativeDateAdapter} from "@angular/material/core";
+import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-calendar',
@@ -11,7 +12,8 @@ import {MatNativeDateModule, provideNativeDateAdapter} from "@angular/material/c
     MatCard,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    NgForOf
   ],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.scss',
