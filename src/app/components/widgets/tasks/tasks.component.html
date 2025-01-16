@@ -1,4 +1,4 @@
-<div>
-    <button class="top-bar" (click)="openTasksSite()">Aufgaben</button>
+<button class="top-bar" (click)="openTasksSite()">Aufgaben</button>
+<div class="scrollable">
+    <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
 </div>
-<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
