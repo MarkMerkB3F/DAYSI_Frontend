@@ -14,21 +14,39 @@
         </div>
         @if (showAddNoteInput) {
             <div class="add-note-window">
-                <input
-                        type="text"
-                        class="add-note"
+                <textarea
+                        rows="50"
+                        class="add-note-window"
+                        [(ngModel)]="noteBody"
                         name="noteBody"
-                />
+                        maxlength="200"
+                >
+                </textarea>
             </div>
             <div class="add-save-note-button">
                 <button (click)="addNote()">Speichern</button>
             </div>
         }
         <div class="notes-list">
-            @for (noteTitle of noteTitles; track noteTitle) {
-                <div class="notes-list-element">
-                    <button class="notes-list-element-button">{{ noteTitle }}</button>
+            @for (note of notes; track note; let idx = $index) {
+                <div class="notes-list-element-title">
+                    <button class="notes-list-element-button" (click)="toggleShowNotes(note.id)">{{ note.title }}</button>
                 </div>
+                @if (note.showBody) {
+                    <div class="notes-list-element-body">
+                            <textarea
+                                    class="add-note-window"
+                                    name="noteBody"
+                                    id="noteBody{{idx}}"
+                                    [(ngModel)]="note.body"
+                                    maxlength="200"
+                            >
+                            </textarea>
+                            <div class="add-save-note-button">
+                                <button (click)="toggleShowNotes(note.id)">Speichern</button>
+                            </div>
+                    </div>
+                }
             }
         </div>
     </div>
