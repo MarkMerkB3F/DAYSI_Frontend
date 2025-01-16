@@ -1,3 +1,10 @@
 <div>
     <button class="top-bar" (click)="openCalendarSite()">Kalender</button>
 </div>
+<div class="cal-grid">
+    <div>
+        <mat-card class="demo-inline-calendar-card">
+            <mat-calendar [(selected)]="selected"></mat-calendar>
+        </mat-card>
+    </div>
+</div>

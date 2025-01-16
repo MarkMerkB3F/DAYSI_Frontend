@@ -29,4 +29,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   @include mat.menu-overrides((
 
   ));
+  @include mat.datepicker-overrides((
+          calendar-date-selected-state-text-color: orange,
+          calendar-date-selected-state-background-color: red,
+  ));
 }
