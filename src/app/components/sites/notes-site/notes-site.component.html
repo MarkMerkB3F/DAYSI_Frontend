@@ -6,4 +6,30 @@
             <a>Zurück</a>
         </button>
     </div>
+    <div class="widget-body">
+        <div class="button-container">
+            <button class="add-note-button" (click)="toggleAddNoteInput()">
+                Notiz hinzufügen
+            </button>
+        </div>
+        @if (showAddNoteInput) {
+            <div class="add-note-window">
+                <input
+                        type="text"
+                        class="add-note"
+                        name="noteBody"
+                />
+            </div>
+            <div class="add-save-note-button">
+                <button (click)="addNote()">Speichern</button>
+            </div>
+        }
+        <div class="notes-list">
+            @for (noteTitle of noteTitles; track noteTitle) {
+                <div class="notes-list-element">
+                    <button class="notes-list-element-button">{{ noteTitle }}</button>
+                </div>
+            }
+        </div>
+    </div>
 </div>

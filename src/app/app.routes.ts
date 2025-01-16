@@ -6,9 +6,9 @@ import {CalendarSiteComponent} from "./components/sites/calendar-site/calendar-s
 import {TasksSiteComponent} from "./components/sites/tasks-site/tasks-site.component";
 
 export const routes: Routes = [
-    { path: 'notes-site', component: NotesSiteComponent},
-    { path: 'reports-site', component: ReportsSiteComponent },
-    { path: 'calendar-site', component: CalendarSiteComponent },
-    { path: 'tasks-site', component: TasksSiteComponent },
+    { path: 'notes', component: NotesSiteComponent},
+    { path: 'reports', component: ReportsSiteComponent },
+    { path: 'calendar', component: CalendarSiteComponent },
+    { path: 'tasks', component: TasksSiteComponent },
     { path: '**', component: HomeSiteComponent}
 ];

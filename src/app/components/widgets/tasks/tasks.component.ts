@@ -11,6 +11,6 @@ export class TasksComponent {
   constructor(private router: Router) {}
 
   openTasksSite(){
-    this.router.navigate(['/tasks-site']);
+    this.router.navigate(['/tasks']);
   }
 }

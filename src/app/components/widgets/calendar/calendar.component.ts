@@ -11,6 +11,6 @@ export class CalendarComponent {
   constructor(private router: Router) {}
 
   openCalendarSite(){
-    this.router.navigate(['/calendar-site']);
+    this.router.navigate(['/calendar']);
   }
 }
