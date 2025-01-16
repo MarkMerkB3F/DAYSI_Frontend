@@ -13,4 +13,10 @@
   border-radius: 22px 22px 0 0;
   font-size: 1.5rem;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.scrollable {
+  overflow: auto;
+  height: 320px;
 }

@@ -55,34 +55,10 @@ export class TasksComponent {
       category: 'Personal',
     },
     {
-      id: '1u2v3w4x',
-      title: 'Task 6',
-      content: 'Fix the leaking kitchen sink.',
-      category: 'Home',
-    },
-    {
-      id: '5y6z7a8b',
-      title: 'Task 7',
-      content: 'Schedule a dentist appointment.',
-      category: 'Health',
-    },
-    {
-      id: '9c0d1e2f',
-      title: 'Task 8',
-      content: 'Write a blog post about Angular tips.',
+      id: '9i0j1k2l',
+      title: 'Task 3',
+      content: 'Prepare slides for the meeting.',
       category: 'Work',
-    },
-    {
-      id: '3g4h5i6j',
-      title: 'Task 9',
-      content: 'Bake a chocolate cake for the party.',
-      category: 'Cooking',
-    },
-    {
-      id: '7k8l9m0n',
-      title: 'Task 10',
-      content: 'Organize books on the bookshelf.',
-      category: 'Home',
     },
   ];
 }
