@@ -21,7 +21,7 @@ export class TasksComponent {
   }
 
   openTasksSite(){
-    this.router.navigate(['/tasks-site']);
+    this.router.navigate(['/tasks']);
   }
 
   tasks: Todo[] = [
