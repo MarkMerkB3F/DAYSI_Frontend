@@ -1,3 +1,6 @@
 <div>
     <button class="top-bar" (click)="openNotesSite()">Notizen</button>
 </div>
+<div class="widget-body">
+    <app-note-item *ngFor="let note of notes" [note]="note"></app-note-item>
+</div>
